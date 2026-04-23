@@ -1,0 +1,25 @@
+[package]
+name = "dream-diary"
+version = "0.1.0"
+description = "Dream-like desktop diary for Windows"
+authors = ["OpenAI Codex"]
+edition = "2021"
+
+[lib]
+name = "dream_diary_lib"
+crate-type = ["cdylib", "rlib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+aes-gcm = "0.10"
+argon2 = "0.5"
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+rusqlite = { version = "0.31", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+thiserror = "1"

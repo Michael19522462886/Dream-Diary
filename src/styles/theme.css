@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Cormorant Garamond Local";
+  src: url("../assets/fonts/CormorantGaramond-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans SC Local";
+  src: url("../assets/fonts/NotoSansSC-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ma Shan Zheng Local";
+  src: url("../assets/fonts/MaShanZheng-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat Local";
+  src: url("../assets/fonts/Caveat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --bg-night: #120d18;
+  --bg-plum: #281727;
+  --bg-dusk: #43253b;
+  --mist: rgba(255, 212, 184, 0.1);
+  --paper: rgba(255, 246, 232, 0.94);
+  --paper-strong: rgba(255, 250, 240, 0.98);
+  --paper-edge: rgba(160, 124, 95, 0.18);
+  --ink: #57372f;
+  --ink-soft: rgba(87, 55, 47, 0.72);
+  --accent: #f5b18d;
+  --accent-strong: #ffd4b2;
+  --accent-deep: #b56f60;
+  --shadow-soft: 0 30px 80px rgba(16, 8, 18, 0.42);
+  --shadow-paper: 0 14px 24px rgba(65, 40, 32, 0.16);
+  --radius-large: 28px;
+  --radius-medium: 18px;
+  --radius-small: 12px;
+  --font-display: "Cormorant Garamond Local", "Noto Sans SC Local", serif;
+  --font-ui: "Noto Sans SC Local", sans-serif;
+  --font-hand-cn: "Ma Shan Zheng Local", "Noto Sans SC Local", serif;
+  --font-hand-en: "Caveat Local", "Ma Shan Zheng Local", cursive;
+}
+
+body {
+  font-family: var(--font-ui);
+  color: #fff4ef;
+  background:
+    radial-gradient(circle at top left, rgba(255, 204, 178, 0.2), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(207, 153, 216, 0.18), transparent 22%),
+    linear-gradient(135deg, var(--bg-night) 0%, var(--bg-plum) 50%, var(--bg-dusk) 100%);
+  overflow: hidden;
+}
